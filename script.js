@@ -2,7 +2,7 @@ function validateForm() {
     let x = document.forms["myForm"]["username"].value;
     let y = document.forms["myForm"]["passwort"].value;
   
-      if ((x=="QuizUser23342") && (y=="220208")) {
+      if ((x=="${{secrets.USERNAME}}") && (y=="${{secrets.PASSWORD}}")) {
         alert("Du wirst zur Website weitergeleitet...");
         return true;
       }
