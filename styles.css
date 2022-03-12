@@ -13,9 +13,11 @@
     h2 {
     font-size:25px;
     text-align:center;
-    background-color: ;
+    background-color: white;
     color: grey;
     padding:20px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    ;
     }
 
     .container{
