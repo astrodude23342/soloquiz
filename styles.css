@@ -26,6 +26,9 @@
         font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     }
 
+    li {
+        float:left;
+    }
     .topnav-right {
         float: right;
       }
