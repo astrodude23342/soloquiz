@@ -26,3 +26,9 @@
         font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     }
 
+    .question {
+        text-align: center;
+        color: white;
+        background: grey;
+    }
+
