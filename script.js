@@ -24,16 +24,4 @@ function validateForm() {
       if (document.getElementbyID('correct3'.checked)) {
         score++;
       }
-      if (document.getElementbyID('correct4'.checked)) {
-        score++;
-      }
-      if (document.getElementbyID('correct5'.checked)) {
-        score++;
-      }
-      if (document.getElementbyID('correct6'.checked)) {
-        score++;
-      }
-      if (document.getElementbyID('correct7'.checked)) {
-        score++;
-      }
     }
