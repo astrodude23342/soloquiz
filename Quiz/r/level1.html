@@ -79,13 +79,24 @@
 <input type="radio" name="question3">--Kommentar
 </div>
 <br>
+<br>
+<div class="question">
+  <h3>Frage 4:</h3>
+  <h4></h4>
+</div>
+<br>
 <center><input type="submit" name="submit" value="Abschicken" onclick="result()"></center>
 <script type="text/javascript">
   function result()
   {
     var score=0;
+    var question1=0;
+    var question2=0;
+    var question3=0;
+
     if(document.getElementById('correct1').checked)
       {	score++;
+        setVar(question1 = 1)
       }
     if(document.getElementById('correct2').checked)
       {	score++;
@@ -96,7 +107,8 @@
    alert("Your score is:"+score);
    // to print on browser
    // document.write("Your score is:"+score);
+   document.write(question1)
   }
-  </script>>
+  </script>
 </body>
 </html>
