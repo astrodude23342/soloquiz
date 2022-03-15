@@ -11,18 +11,3 @@ function validateForm() {
         return false;
       }
     }
-
-    function result() {
-
-      var score=0;
-      if (document.getElementbyID('correct1'.checked)) {
-        score++;
-      }
-      if (document.getElementbyID('correct2'.checked)) {
-        score++;
-      }
-      if (document.getElementbyID('correct3'.checked)) {
-        score++;
-      }
-      alert("Deine erreichte Punktzahl lautet:"+score);
-    }

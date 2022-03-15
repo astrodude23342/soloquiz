@@ -8,7 +8,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://astrodude23342.github.io/soloquiz/styles.css">
-  <script src="https://astrodude23342.github.io/soloquiz/script.js"></script>
 </head>
 <body>
 
@@ -81,5 +80,22 @@
 </div>
 <br>
 <center><input type="submit" name="submit" value="Abschicken" onclick="result()"></center>
+<script type="text/javascript">
+      function result() {
+
+var score=0;
+if (document.getElementbyID('correct1'.checked)) {
+  score++;
+}
+if (document.getElementbyID('correct2'.checked)) {
+  score++;
+}
+if (document.getElementbyID('correct3'.checked)) {
+  score++;
+}
+alert("Deine erreichte Punktzahl lautet:"+score);
+}
+
+</script>
 </body>
 </html>
