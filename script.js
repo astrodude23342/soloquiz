@@ -24,4 +24,5 @@ function validateForm() {
       if (document.getElementbyID('correct3'.checked)) {
         score++;
       }
+      alert("Deine erreichte Punktzahl lautet:"+score);
     }
