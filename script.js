@@ -12,3 +12,28 @@ function validateForm() {
       }
     }
 
+    function result() {
+
+      var score=0;
+      if (document.getElementbyID('correct1'.checked)) {
+        score++;
+      }
+      if (document.getElementbyID('correct2'.checked)) {
+        score++;
+      }
+      if (document.getElementbyID('correct3'.checked)) {
+        score++;
+      }
+      if (document.getElementbyID('correct4'.checked)) {
+        score++;
+      }
+      if (document.getElementbyID('correct5'.checked)) {
+        score++;
+      }
+      if (document.getElementbyID('correct6'.checked)) {
+        score++;
+      }
+      if (document.getElementbyID('correct7'.checked)) {
+        score++;
+      }
+    }
