@@ -50,33 +50,33 @@
 <div class="question">
   <h3>Frage 1:</h3>
   <h4>Wofür wird R hauptsächlich genutzt?</h4>
-<input type="radio" name="question1">Für Datenbanken
+<input type="radio" name="question1">1. Für Datenbanken
 <br>
-<input type="radio" name="question1">Sie ist eine universelle Programmiersprache also für fast alles
+<input type="radio" name="question1">2. Sie ist eine universelle Programmiersprache also für fast alles
 <br>
-<input type="radio" name="question1" id="correct1">Für statistische Berechnungen und Grafiken
+<input type="radio" name="question1" id="correct1">3. Für statistische Berechnungen und Grafiken
 </div>
 <br>
 <br>
 <div class="question">
   <h3>Frage 2:</h3>
   <h4>Welchen Code muss man eingeben, damit Hello World angezeigt wird?</h4>
-<input type="radio" name="question2">print(Hello World)
+<input type="radio" name="question2">1. print(Hello World)
 <br>
-<input type="radio" name="question2" id="correct2">print("Hello World")
+<input type="radio" name="question2" id="correct2">2. print("Hello World")
 <br>
-<input type="radio" name="question2">output("Hello World")
+<input type="radio" name="question2">3. output("Hello World")
 </div>
 <br>
 <br>
 <div class="question">
   <h3>Frage 3:</h3>
   <h4>Wie schreibt man einen Kommentar in R?</h4>
-<input type="radio" name="question3">/**Kommentar/**
+<input type="radio" name="question3">1. /**Kommentar/**
 <br>
-<input type="radio" name="question3" id="correct3">#Kommentar
+<input type="radio" name="question3" id="correct3">2. #Kommentar
 <br>
-<input type="radio" name="question3">--Kommentar
+<input type="radio" name="question3">3. --Kommentar
 </div>
 <br>
 <br>
@@ -93,7 +93,6 @@
     var question1=0;
     var question2=0;
     var question3=0;
-    var print=print("Hello World");
 
     if(document.getElementById('correct1').checked)
       {	score++;
@@ -104,8 +103,9 @@
     if(document.getElementById('correct3').checked)
       {	score++;
       }
-      document.write("Frage 1 richtige Antwort: Fuer statistische Berechnungen und Grafiken");
-      document.write("Frage 2 richtige Antwort:", print)
+      document.write("Frage 1 richtige Antwort: 3.");
+      document.write("Frage 2 richtige Antwort: 2.");
+      document.write("Frage 3 richtige Antwort: 2.");
   }
   </script>
 </body>
