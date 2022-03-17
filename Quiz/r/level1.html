@@ -82,7 +82,45 @@
 <br>
 <div class="question">
   <h3>Frage 4:</h3>
-  <h4></h4>
+  <h4>An welcher Programmiersprache orientiert sich der Syntax von R?</h4>
+  <input type="radio" name="question4">1. JavaScript
+  <br>
+  <input type="radio" name="question4">2. Julia
+  <br>
+  <input type="radio" name="question4" id="correct4">3. S
+  </div>
+<br>
+<br>
+<div class="question">
+  <h3>Frage 5:</h3>
+  <h4>Seit wann gibt es R?</h4>
+  <input type="radio" name="question5" id="correct5">1. 1992
+  <br>
+  <input type="radio" name="question5">2. 1990
+  <br>
+  <input type="radio" name="question5">3. 2008
+</div>
+<br>
+<br>
+<div class="question">
+  <h3>Frage 6:</h3>
+  <h4>Aus wievielen Paketen besteht R? (Programmbibliothek)</h4>
+  <input type="radio" name="question6">1. 24
+  <br>
+  <input type="radio" name="question6" id="correct6">2. 29
+  <br>
+  <input type="radio" name="question6">3. 18
+</div>
+<br>
+<br>
+<div class="question">
+  <h3>Frage 7:</h3>
+  <h4>Wie heißt das Team, das R entwickelt hat?</h4>
+  <input type="radio" name="question7" id="correct7">1. R Core Team
+  <br>
+  <input type="radio" name="question7">2. R-Team
+  <br>
+  <input type="radio" name="question7">3. R Group
 </div>
 <br>
 <center><input type="submit" name="submit" value="Abschicken" onclick="result()"></center>
@@ -90,22 +128,57 @@
   function result()
   {
     var score=0;
-    var question1=0;
-    var question2=0;
-    var question3=0;
+    var question1=false;
+    var question2=false;
+    var question3=false;
+    var question4=false;
+    var question5=false;
+    var question6=false;
+    var question7=false;
 
     if(document.getElementById('correct1').checked)
       {	score++;
+        let question1=true;
       }
     if(document.getElementById('correct2').checked)
       {	score++;
+        let question2=true;
       }
     if(document.getElementById('correct3').checked)
       {	score++;
+        let question3=true;
       }
-      document.write("Frage 1 richtige Antwort: 3. <br>");
+    if(document.getElementById('correct4').checked)
+      {	score++;
+        let question4=true;
+      }
+    if(document.getElementById('correct5').checked)
+      {	score++;
+        let question5=true;
+      }
+    if(document.getElementById('correct6').checked)
+      {	score++;
+        let question6=true;
+      }
+    if(document.getElementById('correct7').checked)
+      {	score++;
+        let question7=true;
+      }
+
+      if(question1=true){
+        document.write("Frage 1: ✓");
+      }
+      else{
+        document.write("Frage 1: ×");
+      }
+
+      document.write("Frage 1 richtige Antwort: <br>");
       document.write("Frage 2 richtige Antwort: 2. <br>");
       document.write("Frage 3 richtige Antwort: 2. <br>");
+      document.write("Frage 4 richtige Antwort: 3. <br>");
+      document.write("Frage 5 richtige Antwort: 1. <br>");
+      document.write("Frage 6 richtige Antwort: 2. <br>");
+      document.write("Frage 7 richtige Antwort: 1. <br>");
       document.write("Deine erreichte Punktzahl: "  +score);
   }
   </script>
