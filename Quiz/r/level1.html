@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://astrodude23342.github.io/soloquiz/styles.css">
 </head>
 <body>
- 
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -123,84 +123,93 @@
   <input type="radio" name="question7">3. R Group
 </div>
 <br>
-<center><input type="submit" name="submit" value="Abschicken" onclick="result()"></center>
+<center><input type="submit" name="submit" value="Abschicken" id="send" center>
 <script type="text/javascript">
-  function result()
-  {
-    let score=0;
-    let question1=false;
-    let question2=false;
-    let question3=false;
-    let question4=false;
-    let question5=false;
-    let question6=false;
-    let question7=false;
- 
-    if(document.getElementById('correct1').checked)
-      { score++;
-        let question1=true;
+  
+  async function result(){
+
+    let score = 0;
+    let question1 = false;
+    let question2 = false;
+    let question3 = false;
+    let question4 = false;
+    let question5 = false;
+    let question6 = false;
+    let question7 = false;
+
+    if(document.getElementById('correct1').checked){
+      	score = score = score*1+1
+        question1 = true;
       }
-    if(document.getElementById('correct2').checked)
-      { score++;
-        let question2=true;
+    if(document.getElementById('correct2').checked){
+      	score = score*1+1;
+        question2=true;
       }
-    if(document.getElementById('correct3').checked)
-      { score++;
-        let question3=true;
+    if(document.getElementById('correct3').checked){
+      	score = score*1+1;
+        question3=true;
       }
-    if(document.getElementById('correct4').checked)
-      { score++;
-        let question4=true;
+    if(document.getElementById('correct4').checked){
+      	score = score*1+1;
+        question4=true;
       }
-    if(document.getElementById('correct5').checked)
-      { score++;
-        let question5=true;
+    if(document.getElementById('correct5').checked){
+      	score = score*1+1;
+        question5=true;
       }
-    if(document.getElementById('correct6').checked)
-      { score++;
-        let question6=true;
+    if(document.getElementById('correct6').checked){
+      	score = score*1+1;
+        question6=true;
       }
-    if(document.getElementById('correct7').checked)
-      { score++;
-        let question7=true;
+    if(document.getElementById('correct7').checked){
+      	score = score*1+1;
+        question7=true;
       }
- 
-      if(question1===true){
+
+      if(question1 === true){
         document.write("Frage 1: ✓ <br>");
       }else{
         document.write("Frage 1: x <br>");
       }
-      if(question2===true){
+      if(question2 === true){
         document.write("Frage 2: ✓ <br>");
       }else{
         document.write("Frage 2: x <br>");
       }
-      if(question3===true){
+      if(question3 === true){
         document.write("Frage 3: ✓ <br>");
       }else{
         document.write("Frage 3: x <br>");
       }
-      if(question4===true){
+      if(question4 === true){
         document.write("Frage 4: ✓ <br>");
       }else{
         document.write("Frage 4: x <br>");
       }
-      if(question5===true){
+      if(question5 === true){
         document.write("Frage 5: ✓ <br>");
       }else{
         document.write("Frage 5: x <br>");
       }
-      if(question6===true){
+      if(question6 === true){
         document.write("Frage 6: ✓ <br>");
       }else{
         document.write("Frage 6: x <br>");
       }
-      if(question7===true){
+      if(question7 === true){
         document.write("Frage 7: ✓ <br>");
       }else{
         document.write("Frage 7: x <br>");
       }
     }
+
+    const button = document.getElementById("send")
+
+    button.addEventListener("click" , () => {
+
+      result()
+    })
+
   </script>
 </body>
 </html>
